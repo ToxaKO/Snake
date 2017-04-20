@@ -1,0 +1,8 @@
+language: c++
+
+c++:
+ 
+ - "10"
+  
+
+script: c++ Snake/main.cpp
