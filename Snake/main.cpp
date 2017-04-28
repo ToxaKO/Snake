@@ -205,13 +205,6 @@ int MoveSnake(Game &g)
 	
     if(next.X < 3 || next.Y < 3 || next.X > 60 || next.Y > 23)//íå óïåðëàñü ëè â ñòåíó?
 		return WALL;
-		
-	if(n > 4)
-	{
-		for(int i = 0; i < n; i++)
-			if(next.X == g.cobra.t[i].X && next.Y == g.cobra.t[i].Y) //íå íàåõàëè ëè íà ñåáÿ?
-				return END;
-	}
 	
 	if(next.X == g.apple.X && next.Y == g.apple.Y)
 	{
