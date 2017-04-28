@@ -193,7 +193,7 @@ void WallWindow() //Âñÿ èíôîðìàöèÿ, îòîáðàæàåìàÿ íà �
 
 
 //Ôóíêöèÿ êîòîðàÿ äâèãàåò è ðèñóåò
-enum {END=0, WALL=1,  PLUS=2, MOVE=3};
+enum {WALL=0,  PLUS=1, MOVE=2};
 int MoveSnake(Game &g)
 {
 	int & n = g.cobra.PCount;
