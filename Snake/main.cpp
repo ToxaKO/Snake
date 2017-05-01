@@ -194,6 +194,15 @@ void WallWindow() //Âñÿ èíôîðìàöèÿ, îòîáðàæàåìàÿ íà �
 
 //Ôóíêöèÿ êîòîðàÿ äâèãàåò è ðèñóåò
 enum {WALL=0,  PLUS=1, MOVE=2};
+/// Snake`s move
+/// \param[in] &g
+/// \param[in] &n
+/// \param[in] head
+/// \param[in] tail
+/// \param[in] next
+/// \return WALL
+/// \return PLUS
+/// \return MOVE
 int MoveSnake(Game &g)
 {
 	int & n = g.cobra.PCount;
